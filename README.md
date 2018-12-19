@@ -11,12 +11,6 @@
 |last_name_kana|string|null: false|
 |email|string|null: false, unique: true|
 |password|string|null: false|
-|postal_cord|integer|null: false|
-|prefecture|string|null: false|
-|city|string|null: false|
-|adress|string|null: false|
-|building|string||
-|phone|integer|null: false|
 |profile|text||
 |birth_year|integer|null: false|
 |birth_month|integer|null: false|
@@ -29,12 +23,29 @@
 - has_many :likes
 - has_many :comments
 - has_many :sns_credential
+- belongs_to :adress
+
+## adressテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|postal_cord|integer|null: false|
+|prefecture|string|null: false|
+|city|string|null: false|
+|adress|string|null: false|
+|building|string||
+|phone|integer|null: false|
+
+### Association
+- belomgs_to :users
 
 ## credit_cardテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 |card_number|integer|null: false|
 |security_code|integer|null: false|
 |limit_month|integer|null: false|
@@ -129,10 +140,7 @@
 ## item_imagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|main_image|text|null: false|
-|sub_imgae_1|text||
-|sub_image_2|text||
-|sub_image_3|text||
+|image|text|null: false|
 |item_id|integer|null: false, foreign_key: true|
 
 ### Association
