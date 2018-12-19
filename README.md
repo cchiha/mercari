@@ -23,9 +23,9 @@
 - has_many :likes
 - has_many :comments
 - has_many :sns_credential
-- belongs_to :adress
+- belongs_to :address
 
-## adressテーブル
+## addressテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -33,7 +33,7 @@
 |postal_cord|integer|null: false|
 |prefecture|string|null: false|
 |city|string|null: false|
-|adress|string|null: false|
+|address|string|null: false|
 |building|string||
 |phone|integer|null: false|
 
