@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'merkaries#index'
+  root 'mercaries#index'
 end
