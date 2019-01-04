@@ -1,20 +1,24 @@
 .header
-  .logo_keyword.clearfix
-    .logo
-      = link_to root_path do
-        = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?'
-    .keyword_search
-      %input{ type: 'search', name: 'keyword', placeholder: 'キーワードから探す'}
-      %i.fa.fa-search
+  .header_inner
+    .logo_keyword.clearfix
+      .logo.l_left
+        = link_to root_path do
+          = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?'
+      .kyeword
+        %form.keyword_search.l_right
+          %input{ type: 'search', name: 'keyword', placeholder: 'キーワードから探す'}
+          %i.fa.fa-search
 
-  .lists
-    .lists_left.clearfix
-      .category_seearch
-        カテゴリーから探す
-      .brand_search
-        ブランドから探す
-    .lists_right
-      .login
-        ログイン
-      .new_member
-        新規会員登録
+    .list_box
+      .l_left
+        %ul.search_nav.clearfix
+          %li.category_seearch
+            カテゴリーから探す
+          %li.brand_search
+            ブランドから探す
+      .l_right
+        %ul.login_nav.clearfix
+          %li.login
+            ログイン
+          %li.new_member
+            新規会員登録
