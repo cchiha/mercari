@@ -1,21 +1,22 @@
-.banner
-  = image_tag 'https://www.mercari.com/jp/assets/img/common/jp/top/download_bg_pc.jpg?'
-  .banner_left
-    %h2
-      スマホでかんたんフリマアプリ
-    %p
-      今すぐ無料ダウンロード！
-  .banner_icon.clearfix
-    .banner_icon__mercari
-      = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/mercari_icon.png?'
-    .banner_icon__apple
-      = link_to 'https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8' do
-        = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/app-store.svg?'
-    .banner_icon__google
-      = link_to 'https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja' do
-        = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/google-play.svg?4136293187'
-  .banner_right
-    = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/jp/download_content_pc.png?'
+.image
+  .banner
+    .banner_left
+      %h2
+        スマホでかんたんフリマアプリ
+      %p
+        今すぐ無料ダウンロード！
+      .banner_icon.clearfix
+        .banner_icon_mercari
+          = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/mercari_icon.png?'
+        .banner_app
+          .banner_app_apple
+            = link_to 'https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8' do
+              = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/app-store.svg?'
+          .banner_app_google
+            = link_to 'https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja' do
+              = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/google-play.svg?4136293187'
+    .banner_right
+      = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/jp/download_content_pc.png?'
 
 .footer
   .footer_lists
@@ -57,6 +58,7 @@
           %li
             = link_to '' do
               採用情報
+      %li.footer_cell
         %h2.footer_head
           メルカリを見る
         %ul
@@ -78,6 +80,7 @@
           %li
             = link_to '' do
               公式Facebook
+      %li.footer_cell
         %h2.footer_head
           ヘルプ＆ガイド
         %ul
@@ -114,9 +117,10 @@
           %li
             = link_to '' do
               メルカリボックス
+      %li.footer_cell
         %h2.footer_head
           国
-        %ul
+        %ul.foreign
           %li
             = link_to '' do
               = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/flag_us.png?'
@@ -134,9 +138,9 @@
       = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/logo-white.svg?4136293187'
   .footer_copyright
     © 2019 Mercari
-  .footer_sell
-    = link_to '' do
-      .text
-        出品
-      .camera
-        %i.fa.fa-camera
+.footer_sell
+  = link_to '' do
+    .text
+      出品
+    .camera
+      %i.fa.fa-camera
