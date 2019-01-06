@@ -1,0 +1,86 @@
+.pickup {
+  padding: 40px 0;
+  background: #f5f5f5;
+  &_title {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: bold;
+    .item_box {
+      width: 700px;
+      margin: 0 auto;
+      &_title {
+        font-size: 22px;
+        margin: 26px 11px;
+        a {
+          color: #0099e8;
+          text-decoration: none;
+        }
+      }
+       .item_box_content {
+        margin: 0 0 0 20px;
+        width: 213px;
+        float: left;
+        background: #fff;
+        a {
+          color: #333;
+          text-decoration: none;
+          cursor: pointer;
+          .item_box_image {
+            width: 213px;
+            height: 220px;
+          }
+          .item_box_body {
+            padding: 16px;
+            height: 80px;
+            .item_box_name {
+              font-weight: 400;
+              height: 3em;
+              font-size: 16px;
+            }
+            .item_box_num {
+              margin: 8px 0 0;
+              .item_box_price {
+                font-size: 13px;
+                float: left;
+              }
+              .item_box_likes {
+                float: right;
+                font-size: 14px;
+                font-weight: 400;
+                .likes_icon {
+                  margin: 0 4px 0 0;
+                  vertical-align: middle;
+                  display: inline-block;
+                  color: #ccc;
+                }
+                 .likes_num {
+                  display: inline-block;
+                  margin: 1px 0 0;
+                  vertical-align: middle;
+                }
+              }
+              .item_box_tax {
+                font-size: 10px;
+                clear: both;
+                float: left;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .item_all {
+        padding: 20px 0 30px;
+        width: 99.5%;
+        text-align: right;
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: #0099e8;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

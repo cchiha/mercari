@@ -1,0 +1,29 @@
+.banner
+  .banner_main
+    .banner_main_visual
+      .banner_content
+        .banner_content_left
+          %h2
+            スマホでかんたん
+            %br
+              フリマアプリ
+          %p
+            メルカリはスマホカメラからすぐに出品できる
+            %br
+              購入時も安心な独自システムのアプリです
+          .banner_icon.clearfix
+            .banner_icon_apple
+              = link_to 'https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8' do
+                = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/app-store.svg?'
+            .banner_icon_google
+              = link_to 'https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja' do
+                = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/google-play.svg?4136293187'
+        .banner_content_right
+          = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/jp/top/main_content_pc.png?4136293187'
+    .nav
+      .prev
+        = image_tag 'https://www.mercari.com/jp/assets/img/common/jp/top/carousel-prev.png'
+      .next
+        = image_tag 'https://www.mercari.com/jp/assets/img/common/jp/top/carousel-next.png'
+    .dots
+      .dot

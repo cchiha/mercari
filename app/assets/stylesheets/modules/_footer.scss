@@ -1,0 +1,128 @@
+.banner_image {
+  background-image: url(https://www.mercari.com/jp/assets/img/common/jp/top/download_bg_pc.jpg?);
+  background-position: center;
+  .banner_main {
+    height: 260px;
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    &_left {
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      text-shadow: 0 0 5px rgba(0,0,0,0.4);
+      h2 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 24px;
+      }
+      .banner_icon {
+        height: 68px;
+        margin: 15px 0 0;
+        &_mercari {
+          float: left;
+          img {
+            height: 68px;
+            vertical-align: middle;
+          }
+        }
+        .banner_app {
+          float: left;
+          margin: 12px 0 0 24px;
+          &_apple {
+            float: left;
+          }
+          &_google {
+            margin: 0 0 0 16px;
+            float: left;
+          }
+        }
+      }
+    }
+    &_right {
+      float: right;
+      width: 300px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 60px 0;
+  text-align: center;
+  background: #212121;
+  color: #fff;
+  &_lists {
+    width: 700px;
+    margin: 0 auto;
+    .footer_cell {
+      display: inline-block;
+      width: 22%;
+      margin: 0 2% 0 0;
+      vertical-align: top;
+      .footer_head {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      ul {
+        margin: 24px 0 0;
+        font-size: 14px;
+        li {
+          margin: 10px 0 0;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+      .foreign {
+        opacity: 0.2;
+        img {
+          width: 22px;
+          margin: 0 4px 0 0;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  &_logo {
+    margin: 30px 0 0;
+    text-align: center;
+    img {
+      height: 33px;
+      width: 124px;
+    }
+  }
+  &_copyright {
+    font-size: 12px;
+  }
+}
+
+.footer_sell {
+  bottom: 32px;
+  right: 32px;
+  width: 160px;
+  height: 160px;
+  font-size: 22px;
+  position: fixed;
+  border-radius: 50%;
+  background: #ea352d;
+  text-align: center;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: #fff;
+    .text {
+      margin: 32px 0 0;
+    }
+    .camera {
+      font-size: 54px;
+      line-height: 1;
+    }
+  }
+}
