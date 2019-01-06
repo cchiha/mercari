@@ -1,49 +1,38 @@
 .banner {
   width: 100%;
   overflow: hidden;
-
   .banner_main {
     height: 290px;
     position: relative;
-
     &_visual {
       height: 100%;
       background-image: url(https://www.mercari.com/jp/assets/img/common/jp/top/main_bg_pc.jpg);
       background-size: cover;
-
       .banner_content {
         position: relative;
         max-width: 730px;
-        height: 100%;
         margin: 0 auto;
-
-        .banner_left {
+        &_left {
           position: absolute;
-          left: 0;
-
           h2 {
             font-size: 40px;
             line-height: 1.2;
             margin-block-start: 0.83em;
             font-weight: bold;
           }
-
           p {
             margin: 16px 0 0;
             font-size: 16px;
-            line-height: 1.77778;
+            line-height: 1.7;
           }
-
           .banner_icon {
             margin: 24px 0;
             line-height: 0;
-
             &_apple {
               display: inline-block;
               width: 128px;
               height: 38px;
             }
-
             &_google {
               display: inline-block;
               width: 128px;
@@ -52,28 +41,23 @@
             }
           }
         }
-
-        .banner_right {
+        &_right {
           height: 290px;
           width: 327px;
           position: absolute;
           right: 0;
-
           img {
             height: 100%;
-            width: auto;
-            position: absolute;
           }
         }
       }
     }
-
     .nav {
+        cursor: pointer;
       .prev {
         height: 46px;
         width: 31px;
         left: 60px;
-        cursor: pointer;
         position: absolute;
         top: 50%;
         transform: translateY(-23px);
@@ -82,7 +66,6 @@
         height: 46px;
         width: 31px;
         right: 60px;
-        cursor: pointer;
         position: absolute;
         top: 50%;
         transform: translateY(-23px);
@@ -92,7 +75,6 @@
       margin: -30px;
       text-align: center;
       line-height: 0;
-
       .dot {
         background: rgba(0,0,0,0.5);
         border-radius: 50%;
@@ -100,7 +82,6 @@
         margin-right: 15px;
         width: 12px;
         cursor: pointer;
-        position: relative;
         display: inline-block;
       }
     }

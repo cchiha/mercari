@@ -1,7 +1,7 @@
-.image {
+.banner_image {
   background-image: url(https://www.mercari.com/jp/assets/img/common/jp/top/download_bg_pc.jpg?);
   background-position: center;
-  .banner {
+  .banner_main {
     height: 260px;
     width: 750px;
     margin: 0 auto;
@@ -42,7 +42,7 @@
         }
       }
     }
-    .banner_right {
+    &_right {
       float: right;
       width: 300px;
       img {
