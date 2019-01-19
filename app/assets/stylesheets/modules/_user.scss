@@ -1,6 +1,6 @@
-.single_bady {
+.single {
   background: #f5f5f5;
-  .single_header {
+  &_header {
     height: 128px;
     text-align: center;
     img {
@@ -9,7 +9,7 @@
       height: 49px;
     }
   }
-  .singup_container {
+  .signup {
     width: 700px;
     margin: 0 auto;
     background: #fff;
@@ -19,10 +19,10 @@
       font-size: 22px;
       font-weight: bold;
     }
-    .singup_inner {
+    &_inner {
       padding: 64px;
       border-top: 1px solid #f5f5f5;
-      .singup_content {
+      .signup_content {
         width: 320px;
         margin: 0 auto;
         font-size: 14px;
@@ -81,15 +81,15 @@
       }
     }
   }
-  .login_container {
+  .login {
     width: 456px;
     margin: 0 auto;
     background: #fff;
     font-size: 14px;
-    .login_no_account {
+    &_no_account {
       padding: 40px 64px;
       text-align: center;
-      .login_new {
+      &_new {
         width: 320px;
         margin-top: 8px;
         background: #0099e8;
@@ -100,7 +100,7 @@
         }
       }
     }
-    .login_sns {
+    &_sns {
       padding: 32px 64px;
       border-top: 1px solid #f5f5f5;
       width: 320px;
@@ -176,7 +176,7 @@
       }
     }
   }
-  .single_footer {
+  &_footer {
     width: 456px;
     height: 180px;
     margin: 0 auto;

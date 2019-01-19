@@ -1,22 +1,22 @@
-.single_bady
+.single
   .single_header
     = link_to root_path do
       = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?'
   .single_main
-    .login_container
+    .login
       .login_no_account
         %p アカウントをお持ちでない方はこちら
-        .login_new
+        .login_no_account_new
           = link_to '' do
             新規会員登録
       .login_sns
         .facebook
           = link_to '' do
-            %i.fa.fa-facebook-square
+            = fa_icon 'facebook-square'
             Facebookでログイン
         .google
           = link_to '' do
-            %i.fa.fa-google-plus
+            = fa_icon 'google-plus'
             Googleでログイン
       %form.login_form
         = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
