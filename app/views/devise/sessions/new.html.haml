@@ -7,8 +7,7 @@
       .login_no_account
         %p アカウントをお持ちでない方はこちら
         .login_no_account_new
-          = link_to '' do
-            新規会員登録
+          = link_to '新規会員登録', ''
       .login_sns
         .facebook
           = link_to '' do
@@ -28,20 +27,16 @@
             = image_tag "https://www.souichi.club/wp-content/uploads/WordPress-340.jpg"
             = f.submit 'ログイン', class:"submit-button"
           .forget_password
-            = link_to '' do
-              パスワードをお忘れの方
+            = link_to 'パスワードをお忘れの方', ''
   .single_footer
     .single_footer_lists
       %ul.clearfix
         %li
-          = link_to '' do
-            プライバシーポリシー
+          = link_to 'プライバシーポリシー', ''
         %li
-          = link_to '' do
-            メルカリ利用規約
+          = link_to 'メルカリ利用規約', ''
         %li
-          = link_to '' do
-            特定商取引に関する表記
+          = link_to '特定商取引に関する表記', ''
     .single_footer_logo
       = link_to root_path do
         = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/logo-gray.svg?'
