@@ -1,0 +1,204 @@
+.single {
+  background: #f5f5f5;
+  &_header {
+    height: 128px;
+    text-align: center;
+    img {
+      margin: 40px;
+      width: 185px;
+      height: 49px;
+    }
+  }
+  .signup {
+    width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+    h2 {
+      padding: 32px 16px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    &_inner {
+      padding: 64px;
+      border-top: 1px solid #f5f5f5;
+      .signup_content {
+        width: 320px;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 48px;
+        .mail {
+          background: #eee;
+          cursor: pointer;
+          position: relative;
+          a {
+            color: #000;
+            text-decoration: none;
+          }
+          i {
+            position: absolute;
+            left: 16px;
+            color: #ccc;
+            font-size: 18px;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+        }
+        .facebook {
+          margin-top: 16px;
+          background: #385185;
+          cursor: pointer;
+          position: relative;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+          i {
+            position: absolute;
+            left: 16px;
+            font-size: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+        }
+        .google {
+          margin-top: 16px;
+          background: #dc4e41;
+          cursor: pointer;
+          position: relative;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+          i {
+            position: absolute;
+            left: 16px;
+            font-size: 18px;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+        }
+      }
+    }
+  }
+  .login {
+    width: 456px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 14px;
+    &_no_account {
+      padding: 40px 64px;
+      text-align: center;
+      &_new {
+        width: 320px;
+        margin-top: 8px;
+        background: #0099e8;
+        line-height: 40px;
+        cursor: pointer;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    &_sns {
+      padding: 32px 64px;
+      border-top: 1px solid #f5f5f5;
+      width: 320px;
+      line-height: 48px;
+      text-align: center;
+      .facebook {
+        margin-top: 16px;
+        background: #385185;
+        cursor: pointer;
+        position: relative;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        i {
+          position: absolute;
+          left: 16px;
+          font-size: 18px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+      .google {
+        margin-top: 16px;
+        background: #dc4e41;
+        cursor: pointer;
+        position: relative;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        i {
+          position: absolute;
+          left: 16px;
+          font-size: 18px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+    form {
+      padding: 24px 64px 32px;
+      .form_group {
+        margin-top: 24px;
+        input {
+          width: 290px;
+          padding: 10px 15px 8px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+        img {
+          width: 304px;
+          height: 78px;
+        }
+        .submit-button {
+          margin-top: 24px;
+          width: 320px;
+          background: #ea352d;
+          border: 1px solid #ea352d;
+          color: #fff;
+          font-size: 14px;
+          cursor: pointer;
+          border-radius: 1px;
+        }
+      }
+      .forget_password {
+        margin-top: 40px;
+        a {
+          color: #0099e8;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &_footer {
+    width: 456px;
+    height: 180px;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    li {
+      display:inline-block;
+      margin: 0 5px;
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+    }
+    &_logo {
+      width: 80px;
+      height: 65px;
+      margin: 40px auto 0;
+    }
+    &_copyright {
+      margin-top: 8px;
+    }
+  }
+}

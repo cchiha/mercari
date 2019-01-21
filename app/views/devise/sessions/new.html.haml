@@ -1,0 +1,44 @@
+.single
+  .single_header
+    = link_to root_path do
+      = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/logo.svg?'
+  .single_main
+    .login
+      .login_no_account
+        %p アカウントをお持ちでない方はこちら
+        .login_no_account_new
+          = link_to '新規会員登録', ''
+      .login_sns
+        .facebook
+          = link_to '' do
+            = fa_icon 'facebook-square'
+            Facebookでログイン
+        .google
+          = link_to '' do
+            = fa_icon 'google-plus'
+            Googleでログイン
+      %form.login_form
+        = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          .form_group
+            = f.email_field :email, autofocus: true, autocomplete: "email",placeholder: 'メールアドレス'
+          .form_group
+            = f.password_field :password, autocomplete: "current-password",placeholder: 'パスワード'
+          .form_group
+            = image_tag "https://www.souichi.club/wp-content/uploads/WordPress-340.jpg"
+            = f.submit 'ログイン', class:"submit-button"
+          .forget_password
+            = link_to 'パスワードをお忘れの方', ''
+  .single_footer
+    .single_footer_lists
+      %ul.clearfix
+        %li
+          = link_to 'プライバシーポリシー', ''
+        %li
+          = link_to 'メルカリ利用規約', ''
+        %li
+          = link_to '特定商取引に関する表記', ''
+    .single_footer_logo
+      = link_to root_path do
+        = image_tag 'https://www-mercari-jp.akamaized.net/assets/img/common/common/logo-gray.svg?'
+    .single_footer_copyright
+      © 2019 Mercari
