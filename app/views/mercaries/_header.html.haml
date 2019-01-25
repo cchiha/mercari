@@ -17,8 +17,23 @@
           %li.brand_search
             ブランドから探す
       .l_right
-        %ul.login_nav.clearfix
-          %li.login
-            ログイン
-          %li.new_member
-            新規会員登録
+        - if user_signed_in?
+          %ul.login_nav.clearfix
+            %li.mypage
+              = link_to '' do
+                = image_tag 'https://mcdn.mercariapp.com/images/member_photo_noimage_thumb.png'
+                マイページ
+            %li.notification
+              = link_to '' do
+                = fa_icon 'bell'
+                お知らせ
+            %li.todo
+              = link_to '' do
+                = fa_icon 'check'
+                やることリスト
+        - else
+          %ul.login_nav.clearfix
+            %li.login
+              = link_to 'ログイン', new_user_session_path
+            %li.new_member
+              = link_to '新規会員登録', users_new_path
